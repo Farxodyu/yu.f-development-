@@ -5,13 +5,20 @@
   font-family: FiraCodeMedium;
   font-size: 16px;
   span{
-    color: $hashTag;
+    color: $hashTagDisable;
   }
   a{
     padding-left: 32px !important;
     padding-right: 0!important;
+    color: $nav-link-color;
   }
 }
 .header__navigation{
   display: flex;
+}
+.active{
+  color: #FFF !important;
+  span{
+    color: $hashTagActive !important;
+  }
 }
