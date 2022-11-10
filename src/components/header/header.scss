@@ -1,0 +1,17 @@
+.navbar{
+  padding: 0 !important;
+}
+.header__link{
+  font-family: FiraCodeMedium;
+  font-size: 16px;
+  span{
+    color: $hashTag;
+  }
+  a{
+    padding-left: 32px !important;
+    padding-right: 0!important;
+  }
+}
+.header__navigation{
+  display: flex;
+}
