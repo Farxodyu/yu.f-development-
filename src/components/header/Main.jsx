@@ -1,5 +1,5 @@
 import React, {useState, useRef} from "react";
-import logo from "../../images/logo.svg"
+import logo from "./logo.svg"
 import {Routes, Route, NavLink} from "react-router-dom";
 import Works from "../works/Works";
 import About from "../about-me/About";
