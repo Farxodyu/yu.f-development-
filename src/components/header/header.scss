@@ -1,24 +1,69 @@
-.navbar{
+.navbar {
   padding: 0 !important;
 }
-.header__link{
+
+.nav_padding {
+  padding-top: 32px;
+}
+
+.header__link {
   font-family: FiraCodeMedium;
   font-size: 16px;
-  span{
+
+  span {
     color: $hashTagDisable;
   }
-  a{
+
+  a {
     padding-left: 32px !important;
-    padding-right: 0!important;
+    padding-right: 0 !important;
     color: $nav-link-color;
   }
 }
-.header__navigation{
+
+.header__navigation {
   display: flex;
+  @include media($medium) {
+    align-items: flex-start;
+    position: absolute;
+    top: 100%!important;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    min-height: 640px;
+    background: $container;
+    overflow: hidden;
+    transform: translateX(100%);
+    display: none;
+  }
+
 }
-.active{
+
+.active {
   color: #FFF !important;
-  span{
+
+  span {
     color: $hashTagActive !important;
   }
 }
+
+ .main__navbar {
+   @include media($medium){
+     margin-top: 47px;
+   }
+
+ }
+ .header__link{
+   @include media($medium){
+     font-size: 32px;
+   }
+ }
+.main__logo{
+  @include media($medium){
+    margin-left: 12px;
+  }
+}
+ .main__icon-size{
+   font-size: 24px;
+   height: 24px;
+ }

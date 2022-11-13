@@ -13,10 +13,43 @@
   src: url('../fonts/FiraCode-SemiBold.ttf');
   font-weight: 700;
 }
+$large: 1140px;
+$medium: 992px;
+$small: 768px;
+$extraSmall: 576px;
+$bigPhone: 425px;
+$gutter: 15px;
+
+@mixin media($size: $large){
+  @media(max-width: $size) {
+    @content
+  }
+}
+@mixin container($padding: $gutter){
+  max-width: $large;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $padding;
+  padding-right: $padding;
+  @include media(){
+    max-width: $medium;
+  }
+  @include media($medium){
+    max-width: $small;
+  }
+  @include media($small){
+    max-width: $extraSmall;
+  }
+  @include media( $extraSmall){
+    max-width: $bigPhone;
+  }
+}
+
 $bgPage:  #1E1E1E;
 $container:#282C33;
 $link-color: #FFF;
 $nav-link-color: #ABB2BF;
-$hashTagActive: #E5C07A;
+$hashTagActive: #f1cb80;
 $hashTagDisable: #998051;
 

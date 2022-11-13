@@ -7,17 +7,18 @@
 body{
   background: $bgPage;
   font-family: FiraCodeRegular, sans-serif;
+  color: $link-color;
 }
 p{
   margin: 0;
 }
 .container{
-  padding-left: 0!important;
-  padding-right: 0!important;
+  padding-left: 15px!important;
+  padding-right: 15px!important;
 }
 .main-container{
   background: $container;
-  padding: 32px 0;
+  position: relative;
   a{
     display: flex;
     align-items: center;
@@ -29,4 +30,11 @@ p{
 a{
   color: $link-color;
   text-decoration: none;
+}
+a:hover{
+  color: $link-color;
+}
+.btn:hover{
+  border: 1px solid $hashTagActive !important;
+  background: rgba(153, 128, 81, 0.47) !important;
 }

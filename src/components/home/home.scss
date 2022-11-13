@@ -1,0 +1,112 @@
+.home{
+  padding-top: 54px;
+  position: relative;
+  &__b-1{
+    @include media($small) {
+      align-items: center;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+  }&__b-2{
+    @include media($medium) {
+
+    }
+  }
+  &__h{
+    font-family: 'FiraCodeSemiBold';
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 32px;
+    span{
+      color: $hashTagActive;
+    }
+  }
+  &__descr{
+    color: $nav-link-color;
+    line-height: 25px;
+    margin-bottom: 24px;
+  }
+  &__contact{
+    width: 100%;
+    line-height: 21px;
+    font-family: "FiraCodeMedium";
+    display: flex;
+    justify-content: center;
+  }
+  &__btn{
+    max-width: 190px;
+    width: 100%;
+    border: 1px solid $hashTagActive;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding: 8px 16px;
+    @include media($small){
+      padding: 8px 16px;
+    }
+  }
+  /**********************/
+  /*BLOCK 2*/
+
+  &__preview{
+    position: relative;
+    height: 386px;
+    max-width: 648px;
+    width: 100%;
+  }
+  &__avatar{
+    position: absolute;
+    max-width: 457px;
+    object-fit: cover;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 999;
+  }
+  &__logo{
+    position: absolute;
+    max-width: 200px;
+    width: 100%;
+    object-fit: contain;
+    left: 50px;
+    top: 68.75px;
+  }
+  &__dots{
+    position: absolute;
+    right: 90px;
+    top: 261px;
+    z-index: 1000;
+  }
+  &__working{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-border{
+      border: 1px solid $nav-link-color;
+      padding: 8px 70px 8px 8px;
+      display: flex;
+      align-items: center;
+      @include media($small){
+        padding-right: 40px;
+      }
+    }
+    &-color{
+      width: 16px;
+      height: 16px;
+      background: $hashTagActive;
+      border: 1px solid $hashTagActive;
+      margin-right: 10px;
+    }
+    &-description{
+      font-family: "FiraCodeMedium";
+      color: $nav-link-color;
+      span{
+        color: $link-color;
+      }
+    }
+  }
+}
