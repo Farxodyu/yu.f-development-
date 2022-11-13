@@ -51,7 +51,7 @@ const Main = () => {
     <>
       <nav className="navbar navbar-expand-lg ">
         <div className="container main-container nav_padding">
-          <NavLink to="#" className={"main__logo"}>
+          <NavLink to="/" className={"main__logo"}>
             <img
               src={logo}
               alt=""
@@ -78,7 +78,7 @@ const Main = () => {
         </div>
       </nav>
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="*" element={<Home/>}/>
         <Route path="/works" element={<Works/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/contacts" element={<Contacts/>}/>

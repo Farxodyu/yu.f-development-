@@ -1,6 +1,6 @@
 import React from "react";
-import avatar from "../../images/image-removebg-preview2.png";
-import home_logo from "../../images/home_logo.svg";
+import avatar from "/src/components/home/image-removebg-preview2.png";
+import home_logo from "../../images/logo.svg";
 import home_dots from "../../images/Dots.svg"
 import {Routes, Route, Link} from "react-router-dom";
 import Contacts from "../contacts/Contacts";
