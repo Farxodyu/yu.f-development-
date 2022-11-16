@@ -109,4 +109,61 @@
       }
     }
   }
+  &__dr-who{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 112px auto;
+    max-width: 812px;
+    width: 100%;
+    &-qoutes{
+      font-family: "FiraCodeMedium";
+      font-size: 24px;
+      line-height: 31px;
+      border: 1px solid $quoteColor;
+      position: relative;
+      margin-bottom: 0!important;
+      align-self: center;
+      padding: 32px;
+      &-left{
+        position: absolute;
+        top: -1px;
+        left: 17px;
+        display: flex;
+        justify-content: center;
+        height: 21px;
+        width: 41px;
+        font-size: 51px;
+        background: $container;
+        color: $quoteColor;
+      }
+      &-right{
+        position: absolute;
+        bottom: -20px;
+        right: 17px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        height: 21px;
+        width: 41px;
+        font-size: 51px;
+        background: $container;
+        color: $quoteColor;
+      }
+    }
+    &-autor{
+      padding: 16px;
+      align-self: center;
+      font-size: 24px;
+      border-top: none;
+      border-left: 1px solid $quoteColor;
+      border-bottom: 1px solid $quoteColor;
+      border-right: 1px solid $quoteColor;
+    }
+  }
+}
+.problocks{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }

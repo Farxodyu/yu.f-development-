@@ -6,6 +6,8 @@ import About from "../about-me/About";
 import Contacts from "../contacts/Contacts";
 import Home from "../home/Home";
 import {gsap} from "gsap";
+
+///////
 const Main = () => {
   let headerNav = useRef(null);
   const [position, setPositio]= useState(-100)
