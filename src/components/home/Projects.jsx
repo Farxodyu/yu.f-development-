@@ -1,4 +1,7 @@
 import React from "react";
+import './img/slide1.jpg';
+import './img/slide2.jpg';
+import  './img/slide4.jpg';
 const Projects = (props) => {
   return (
     <>
