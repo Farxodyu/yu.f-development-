@@ -6,9 +6,9 @@ import {Routes, Route, Link, NavLink} from "react-router-dom";
 import Contacts from "../contacts/Contacts";
 import Works from "../works/Works";
 import Projects from "./Projects";
-import rec22 from '../home/Rectangle22.jpg'
-import rec23 from '../home/Rectangle23.jpg'
-import rec24 from '../home/Rectangle24.jpg'
+import rec22 from './Rectangle22.jpg'
+import rec23 from './Rectangle23.jpg'
+import rec24 from './Rectangle24.jpg'
 const Home = () => {
   const inProjects = [
     {
