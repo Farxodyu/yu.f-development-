@@ -162,6 +162,33 @@
     }
   }
 }
+.projects{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  &__dots{
+    position: absolute;
+    top: 80px;
+    left: -15%;
+  }
+  &__tit-line{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-title{
+    }
+    &-line{
+      height: 1px;
+      width: 411px;
+      position: absolute;
+      left: 100%;
+      margin-left: 16px;
+      background:$content-line;
+    }
+  }
+}
 .problocks{
   display: grid;
   grid-template-columns: repeat(3, 1fr);

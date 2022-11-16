@@ -84,10 +84,13 @@ const Home = () => {
             <div className="projects__tit-line-line"></div>
           </div>
           <div className="projects__view-line">
-            <NavLink to={'/works'} className="projects__view-line-view">View All</NavLink>
+            <NavLink to={'/works'} className="projects__view-line-view">View All ~~></NavLink>
             <div className={"projects__view-line-line"}></div>
           </div>
+          <img src={home_dots} className={"projects__dots"} alt=""/>
         </div>
+        
+        
         
         <div className="problocks">
           {projects.map(item=>(
@@ -95,6 +98,9 @@ const Home = () => {
           ))}
         </div>
       </div>
+      
+      
+      
       <Routes>
         <Route path="/contacts" element={<Contacts/>}/>
         <Route path="/works" element={<Works/>}/>

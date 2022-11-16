@@ -15,8 +15,8 @@ const Projects = (props) => {
          <p className="pro-main__desc">
            {props.server}
          </p>
-         <button className="pro-main__button">
-           <a href={props.link} className="pro-main__link">View</a>
+         <button className="pro-main__button btn">
+           <a href={props.link} className="pro-main__link">View ~></a>
          </button>
        </div>
      </div>

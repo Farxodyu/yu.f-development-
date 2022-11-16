@@ -1,0 +1,31 @@
+.pro{
+  border: 1px solid $nav-link-color;
+  &__img{
+    max-width: 340px;
+    width: 100%;
+    object-fit: contain;
+  }
+  &__desc{
+    padding: 8px;
+    font-family: "FiraCodeRegular", sans-serif;
+    color: $nav-link-color;
+    border-top: 1px solid $nav-link-color;
+    border-bottom: 1px solid $nav-link-color;
+  }
+}
+.pro-main{
+  &__title{
+    padding: 16px;
+    font-family: "FiraCodeMedium", sans-serif;
+    font-size: 24px;
+    margin: 0;
+  }
+  &__desc{
+    color: $nav-link-color;
+    padding: 0 16px 16px 16px;
+  }
+  &__button{
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
+}
