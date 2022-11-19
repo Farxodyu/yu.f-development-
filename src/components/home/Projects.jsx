@@ -1,5 +1,5 @@
 import React from "react";
-import './img/slide1.jpg';
+import './img/slide1.jpg'; //обязательно добавлять ссылки на источник!
 import './img/slide2.jpg';
 import  './img/slide4.jpg';
 const Projects = (props) => {

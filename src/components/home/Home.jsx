@@ -9,30 +9,37 @@ import Projects from "./Projects";
 import rec22 from './img/slide1.jpg';
 import rec23 from './img/slide2.jpg';
 import rec24 from './img/slide4.jpg';
+import skills_dots_1 from './img/skills_dots-1.svg';
+import skills_dots_2 from './img/skills_dots-2.svg';
+import skills_squad_big from './img/skills_squad-big.svg';
+import skills_squad_small from './img/skills_squad-small.svg';
+import skills_logo from './img/skills_logo.svg';
+
 const Home = () => {
   const inProjects = [
     {
-      id:1,
-      image:rec22,
+      id: 1,
+      image: rec22,
       skills: "HTML SCSS ",
-      title:"ChertNodes",
+      title: "ChertNodes",
       server: "servers hosting",
-      link:"#",
+      link: "#",
     },
     {
-      id:2,
-      image:rec23,
+      id: 2,
+      image: rec23,
       skills: "React HTML SCSS ",
-      title:"ProtectX",
+      title: "ProtectX",
       server: "servers hosting",
-      link:"#"},
+      link: "#"
+    },
     {
-      id:3,
-      image:rec24,
+      id: 3,
+      image: rec24,
       skills: "HTML CSS JS",
-      title:"ChertNodes",
+      title: "ChertNodes",
       server: "servers hosting",
-      link:"#"
+      link: "#"
     }
   ]
   const [projects] = useState(inProjects);
@@ -45,7 +52,7 @@ const Home = () => {
               I'm a <span>front-end developer</span>
             </h1>
             <p className="home__descr">
-              I craft responsive websites where technologies meet creativity
+              I craft responsive websites where technologies meet creativity (сайт находится в разработке и мржет быть не адаптивен)
             </p>
             <button className="btn home__btn"><Link to="/contacts" className="home__contact">
               Contact me!!
@@ -80,7 +87,7 @@ const Home = () => {
         
         <div className="projects">
           <div className="projects__tit-line">
-            <h3 className="projects__tit-line-title"><span>#</span>projects</h3>
+            <h3 className="projects__tit-line-title"><span>#</span>Projects</h3>
             <div className="projects__tit-line-line"></div>
           </div>
           <div className="projects__view-line">
@@ -90,17 +97,84 @@ const Home = () => {
           <img src={home_dots} className={"projects__dots"} alt=""/>
         </div>
         
-        
-        
         <div className="problocks">
-          {projects.map(item=>(
-            <Projects key={item.id} image={item.image} link={item.link} server={item.server} title={item.title} skills={item.skills}/>
+          {projects.map(item => (
+            <Projects key={item.id} image={item.image} link={item.link} server={item.server} title={item.title}
+                      skills={item.skills}/>
           ))}
         </div>
+        <div className="projects">
+          <div className="projects__tit-line">
+            <h3 className="projects__tit-line-title"><span>#</span>Skills</h3>
+            <div className="projects__tit-line-line"></div>
+          </div>
+        </div>
+        
+        <div className="skills">
+          <div className="skills__geometry">
+            <img src={skills_dots_1} alt="dots" className={"skills__geometry-dots-1"}/>
+            <img src={skills_dots_2} alt="dots-2" className={"skills__geometry-dots-2"}/>
+            <img src={skills_squad_big} alt="squad" className={"skills__geometry-squad-big"}/>
+            <img src={skills_squad_small} alt="squad-sm" className={"skills__geometry-squad-small"}/>
+            <img src={skills_logo} alt="squad-sm" className={"skills__geometry-logo"}/>
+          </div>
+          
+          <div className="skills__main">
+            
+            <div className="skills__df">
+              <div className="skills__df-block">
+                <p className="skills__df-block-title">
+                  Languages
+                </p>
+                <p className="skills__df-block-description">
+                  JavaScript
+                </p>
+              </div>
+            </div>
+            
+            <div className="skills__df">
+              <div className="skills__df-block">
+                <p className="skills__df-block-title">
+                  Database
+                </p>
+                <p className="skills__df-block-description">
+                  SQL
+                </p>
+              </div>
+              <div className="skills__df-block">
+                <p className="skills__df-block-title">
+                  Other
+                </p>
+                <p className="skills__df-block-description">
+                  HTML CSS SCSS EJS
+                </p>
+              </div>
+            </div>
+            
+            
+            <div className="skills__df">
+              <div className="skills__df-block">
+                <p className="skills__df-block-title">
+                  Tools
+                </p>
+                <p className="skills__df-block-description">
+                  VSCode Figma WebStorm Git Font Awesome
+                  Bootstrap Icon
+                </p>
+              </div><div className="skills__df-block">
+                <p className="skills__df-block-title">
+                  Frameworks
+                </p>
+                <p className="skills__df-block-description">
+                  React Bootstrap
+                </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
       </div>
-      
-      
-      
       <Routes>
         <Route path="/contacts" element={<Contacts/>}/>
         <Route path="/works" element={<Works/>}/>

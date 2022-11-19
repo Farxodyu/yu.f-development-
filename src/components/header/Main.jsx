@@ -52,6 +52,14 @@ const Main = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg ">
+        <div className="social">
+          <div className="social__line"></div>
+          <div className="networks">
+            <a href="https://github.com/Farxodyu"><i className="bi bi-github networks__icon" ></i></a>
+            <a href="mailto:ideauisup@gmail.com"><i className="bi bi-envelope-at networks__icon" ></i></a>
+            <a href="https://t.me/IcorpX"><i className="bi bi-telegram networks__icon" ></i></a>
+          </div>
+        </div>
         <div className="container main-container nav_padding">
           <NavLink to="/" className={"main__logo"}>
             <img
@@ -79,6 +87,9 @@ const Main = () => {
           </div>
         </div>
       </nav>
+      
+      
+      
       <Routes>
         <Route path="*" element={<Home/>}/>
         <Route path="/works" element={<Works/>}/>

@@ -1,40 +1,48 @@
-.home{
+.home {
   padding-top: 54px;
   position: relative;
-  &__b-1{
+
+  &__b-1 {
     @include media($small) {
       align-items: center;
       text-align: center;
       margin-top: 50px;
       margin-bottom: 100px;
     }
-  }&__b-2{
+  }
+
+  &__b-2 {
     @include media($medium) {
 
     }
   }
-  &__h{
+
+  &__h {
     font-family: 'FiraCodeSemiBold';
     font-size: 32px;
     line-height: 42px;
     margin-bottom: 32px;
-    span{
+
+    span {
       color: $hashTagActive;
     }
   }
-  &__descr{
+
+  &__descr {
     color: $nav-link-color;
     line-height: 25px;
     margin-bottom: 24px;
   }
-  &__contact{
+
+  &__contact {
     width: 100%;
     line-height: 21px;
     font-family: "FiraCodeMedium";
     display: flex;
     justify-content: center;
   }
-  &__btn{
+
+  &__btn {
     max-width: 190px;
     width: 100%;
     border: 1px solid $hashTagActive;
@@ -42,20 +50,22 @@
     -moz-border-radius: 0;
     border-radius: 0;
     padding: 8px 16px;
-    @include media($small){
+    @include media($small) {
       padding: 8px 16px;
     }
   }
+
   /**********************/
   /*BLOCK 2*/
 
-  &__preview{
+  &__preview {
     position: relative;
     height: 386px;
     max-width: 648px;
     width: 100%;
   }
-  &__avatar{
+
+  &__avatar {
     position: absolute;
     max-width: 457px;
     object-fit: cover;
@@ -66,7 +76,8 @@
     margin: auto;
     z-index: 999;
   }
-  &__logo{
+
+  &__logo {
     position: absolute;
     max-width: 200px;
     width: 100%;
@@ -74,58 +85,67 @@
     left: 50px;
     top: 68.75px;
   }
-  &__dots{
+
+  &__dots {
     position: absolute;
     right: 90px;
     top: 261px;
     z-index: 1000;
   }
-  &__working{
+
+  &__working {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    &-border{
+
+    &-border {
       border: 1px solid $nav-link-color;
       padding: 8px 70px 8px 8px;
       display: flex;
       align-items: center;
-      @include media($small){
+      @include media($small) {
         padding-right: 40px;
       }
     }
-    &-color{
+
+    &-color {
       width: 16px;
       height: 16px;
       background: $hashTagActive;
       border: 1px solid $hashTagActive;
       margin-right: 10px;
     }
-    &-description{
+
+    &-description {
       font-family: "FiraCodeMedium";
       color: $nav-link-color;
-      span{
+
+      span {
         color: $link-color;
       }
     }
   }
-  &__dr-who{
+
+  &__dr-who {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 112px auto;
     max-width: 812px;
     width: 100%;
-    &-qoutes{
+
+    &-qoutes {
       font-family: "FiraCodeMedium";
       font-size: 24px;
       line-height: 31px;
       border: 1px solid $quoteColor;
       position: relative;
-      margin-bottom: 0!important;
+      margin-bottom: 0 !important;
       align-self: center;
       padding: 32px;
-      &-left{
+
+      &-left {
         position: absolute;
         top: -1px;
         left: 17px;
@@ -137,7 +157,8 @@
         background: $container;
         color: $quoteColor;
       }
-      &-right{
+
+      &-right {
         position: absolute;
         bottom: -20px;
         right: 17px;
@@ -151,7 +172,8 @@
         color: $quoteColor;
       }
     }
-    &-autor{
+
+    &-autor {
       padding: 16px;
       align-self: center;
       font-size: 24px;
@@ -162,35 +184,102 @@
     }
   }
 }
-.projects{
+.projects {
   position: relative;
   display: flex;
   justify-content: space-between;
   margin-bottom: 48px;
-  &__dots{
+  margin-top: 150px;
+  @include media($small) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__view-line {
+    &-view {
+      @include media($small) {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &__dots {
     position: absolute;
     top: 80px;
     left: -15%;
   }
-  &__tit-line{
+
+  &__tit-line {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    &-title{
+    @include media($small) {
+      flex-direction: column;
     }
-    &-line{
+
+    &-title {
+      span{
+        color: $hashTagActive;
+        font-size: 32px;
+      }
+      @include media($small) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &-line {
       height: 1px;
       width: 411px;
       position: absolute;
       left: 100%;
       margin-left: 16px;
-      background:$content-line;
+      background: $content-line;
+      @include media($medium) {
+        width: 300px
+      }
+      @include media($small) {
+        position: static;
+      }
+      @include media($bigPhone) {
+        width: 250px;
+      }
     }
   }
 }
-.problocks{
+
+.problocks {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  @include media(1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include media($medium) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.social{
+  position: absolute;
+  top: 0;
+  left: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__line{
+    height: 191px;
+    width: 1px;
+    background: $quoteColor;
+  }
+}
+.networks{
+  display: flex;
+  flex-direction: column;
+  margin-top: 14px;
+  &__icon{
+    margin-top: 14px;
+    font-size: 22px;
+    height: 22px;
+    color: $quoteColor;
+  }
 }
