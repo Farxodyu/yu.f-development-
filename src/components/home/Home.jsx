@@ -9,11 +9,11 @@ import Projects from "./Projects";
 import rec22 from './img/slide1.jpg';
 import rec23 from './img/slide2.jpg';
 import rec24 from './img/slide4.jpg';
-import skills_dots_1 from './img/skillsDotsOne.svg';
-import skills_dots_2 from './img/skillsDotsTwo.svg';
-import skills_squad_big from './img/skillsSquadBig.svg';
-import skills_squad_small from './img/skillsSquadSmall.svg';
-import skills_logo from './img/skillsLogo.svg';
+import skills_dots_1 from './skillsDotsOne.svg';
+import skills_dots_2 from './skillsDotsTwo.svg';
+import skills_squad_big from './skillsSquadBig.svg';
+import skills_squad_small from './skillsSquadSmall.svg';
+import skills_logo from './skillsLogo.svg';
 
 const Home = () => {
   const inProjects = [
