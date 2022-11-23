@@ -1,0 +1,15 @@
+{
+  "short_name": "Portfolio",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "logo192.svg",
+      "type": "image/svg",
+      "sizes": "26x28"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

@@ -6,6 +6,7 @@ import {Routes, Route, Link, NavLink} from "react-router-dom";
 import Contacts from "../contacts/Contacts";
 import Works from "../works/Works";
 import Projects from "./Projects";
+import Typewriter from "typewriter-effect";
 import rec22 from './img/slide1.jpg';
 import rec23 from './img/slide2.jpg';
 import rec24 from './img/slide4.jpg';
@@ -48,11 +49,18 @@ const Home = () => {
       <div className="container main-container home">
         <div className="row">
           <div className="col-xl-6 col-lg-12 d-flex flex-column justify-content-center home__b-1">
-            <h1 className="home__h"> My name is <span>Farkhod</span> and
-              I'm a <span>front-end developer</span>
+            <h1 className="home__h">
+              <Typewriter
+                onInit={(typewriter) => (
+                  typewriter.typeString("My name is <span>Farkhod</span>\n" +
+                    "and I'm a <span>front-end developer</span>")
+                    .start()
+                )}
+              />
             </h1>
             <p className="home__descr">
-              I craft responsive websites where technologies meet creativity (сайт находится в разработке и мржет быть не адаптивен)
+              I craft responsive websites where technologies meet creativity (сайт находится в разработке и мржет быть
+              не адаптивен)
             </p>
             <button className="btn home__btn"><Link to="/contacts" className="home__contact">
               Contact me!!
@@ -161,7 +169,8 @@ const Home = () => {
                   VSCode Figma WebStorm Git Font Awesome
                   Bootstrap Icon
                 </p>
-              </div><div className="skills__df-block">
+              </div>
+              <div className="skills__df-block">
                 <p className="skills__df-block-title">
                   Frameworks
                 </p>
@@ -170,10 +179,10 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            
+          
           </div>
         </div>
-        
+      
       </div>
       <Routes>
         <Route path="/contacts" element={<Contacts/>}/>
